@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              inter: ["Inter", "sans-serif"],
+              "space-grotesk": ["Space Grotesk", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+
+    <script
+      src="https://code.jquery.com/jquery-2.2.0.min.js"
+      type="text/javascript"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+  </head>
+
+  <body>
+    <div class="w-screen overflow-x-hidden">
+      <nav class="w-11/12 mx-auto">
+        <div class="px-10 flex justify-between lg:justify-between py-5">
+          <h1 class="font-bold text-xl">LOGO</h1>
+          <!-- desktop menu -->
+          <div class="list-none flex flex-row space-x-10 items-center">
+            <li class="text-xl font-bold hidden lg:flex">
+              <a href="#">Home</a>
+            </li>
+            <li class="text-xl font-bold hidden lg:flex">
+              <a href="#">About</a>
+            </li>
+            <li class="text-xl font-bold hidden lg:flex">
+              <a href="#">Contact</a>
+            </li>
+            <li class="text-xl font-bold hidden lg:flex">
+              <a href="#">FAQ's</a>
+            </li>
+            <div class="border-2 px-5 py-1 border-gray-800 hidden md:flex">
+              <p class="text-xl font-bold">Apply For Job</p>
+            </div>
+          </div>
+
+          <div class="mb-2 lg:hidden" id="burger">
+            <div class="bg-black h-1 w-6 my-1 rounded-md" id="line1"></div>
+            <div class="bg-black h-1 w-6 my-1 rounded-md" id="line2"></div>
+            <div class="bg-black h-1 w-6 my-1 rounded-md" id="line3"></div>
+          </div>
+          <div class="hidden mt-6" id="closeburger">
+            <div
+              class="bg-black h-1 w-7 -my-2 rounded-md rotate-45"
+              id="line1"
+            ></div>
+            <div
+              class="bg-black h-1 w-7 my-1 rounded-md -rotate-45"
+              id="line3"
+            ></div>
+          </div>
+        </div>
+        <div
+          class="flex flex-col space-y-10 justify-center items-center absolute w-full border-2 border-gray-800 bg-white py-5 hidden"
+          id="navlist"
+        >
+          <button
+            class="shadow-[2px_2px_#000000] w-56 border-2 border-gray-800"
+          >
+            Home
+          </button>
+          <button
+            class="shadow-[2px_2px_#000000] w-56 border-2 border-gray-800"
+          >
+            About Us
+          </button>
+          <button
+            class="shadow-[2px_2px_#000000] w-56 border-2 border-gray-800"
+          >
+            Contact
+          </button>
+          <button
+            class="shadow-[2px_2px_#000000] w-56 border-2 border-gray-800"
+          >
+            FAQ's
+          </button>
+        </div>
+      </nav>
+
+      <div
+        class="w-full relative bg-[#D7F7FF] flex flex-col justify-center items-center h-[770px] sm:h-[730px] md:h-[600px] gap-5"
+      >
+        <div
+          class="w-[60%] font-space-grotesk font-bold text-[#004E64] text-5xl lg:text-6xl text-center mb-10"
+        >
+          Empowering Communities for a More Just and
+          <span class="text-[#00AD13]">Equitable World</span>
+        </div>
+        <div class="sm:[750px] md:w-[700px] text-center text-2xl mb-10">
+          Our mission at is to address complex social issues through
+          entrepreneurial projects.
+        </div>
+
+        <img
+          src="./public/blackTriangle.svg"
+          alt="img"
+          class="absolute md:left-[17%] md:top-[34%] sm:left-[17%] sm:top-[78%] -left-[3%] top-2"
+          width="100"
+        />
+        <img
+          src="./public/greenTriangle.svg"
+          alt="img"
+          class="absolute md:left-[18%] md:top-[33%] sm:left-[18%] sm:top-[77%] -left-[1%] top-1"
+          width="100"
+        />
+        <img
+          src="./public/outlineTriangle.svg"
+          alt="img"
+          class="absolute md:left-[19%] md:top-[32%] sm:left-[19%] sm:top-[76%] left-[1%] top-0"
+          width="100"
+        />
+        <img
+          src="./public/coil.svg"
+          alt="img"
+          class="absolute md:right-[100px] md:top-[40%] sm:right-[10%] sm:top-[70%] -right-[5%] top-[70%]"
+          width="150"
+        />
+        <img
+          src="./public/sun.svg"
+          alt="img"
+          class="absolute sm:left-[35%] md:left-[40%] bottom-0"
+        />
+      </div>
+
+      <div class="w-full py-52 sm:py-40 md:py-28 lg:py-20 relative">
+        <div class="w-10/12 mx-auto flex flex-col justify-center gap-5">
+          <div
+            class="w-fit mx-auto text-black font-bold text-4xl md:text-5xl font-space-grotesk text-center"
+          >
+            SOCIAL ENTREPRENEUR
+          </div>
+          <div class="font-inter font-regular text-base">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Velit
+            laoreet id donec ultrices tincidunt arcu non sodales neque.
+            Fermentum posuere urna nec tincidunt praesent semper feugiat nibh
+            sed. Faucibus in ornare quam viverra orci sagittis eu. Nibh tellus
+            molestie nunc non blandit massa enim. Ullamcorper malesuada proin
+            libero nunc. <br /><br />
+            Et leo duis ut diam quam nulla porttitor massa id. Dui faucibus in
+            ornare quam viverra orci. Dictumst vestibulum rhoncus est
+            pellentesque elit ullamcorper dignissim. In vitae turpis massa sed
+            elementum tempus egestas sed. Ridiculus mus mauris vitae ultricies
+            leo integer malesuada nunc. Neque convallis a cras semper auctor
+            neque. Scelerisque purus semper eget duis. Sit amet consectetur
+            adipiscing elit pellentesque. Bibendum arcu vitae elementum
+            curabitur vitae nunc sed velit. At imperdiet dui accumsan sit amet
+            nulla facilisi morbi. In mollis nunc sed id semper risus in. Enim
+            tortor at auctor urna nunc. Nulla facilisi nullam vehicula ipsum a
+            arcu cursus. Eleifend mi in nulla posuere sollicitudin aliquam
+            ultrices sagittis. Nisi porta lorem mollis aliquam ut porttitor.
+            Magna etiam tempor orci eu. Duis ultricies lacus sed turpis
+            tincidunt. Ligula ullamcorper malesuada proin libero nunc consequat
+            interdum varius. Praesent semper feugiat nibh sed pulvinar proin
+            gravida. Posuere lorem ipsum dolor sit. Nunc consequat interdum
+            varius sit.
+          </div>
+
+          <div
+            class=" md:w-[700px] lg:w-[800px] font-inter font-regular text-base"
+          >
+            At imperdiet dui accumsan sit amet nulla facilisi morbi.
+            <span class="font-bold"
+              >In mollis nunc sed id semper risus in. Enim tortor at auctor urna
+              nunc. Nulla facilisi nullam vehicula ipsum a arcu cursus. Eleifend
+              mi in nulla posuere sollicitudin aliquam ultrices sagittis. Nisi
+              porta lorem mollis aliquam ut porttitor. Magna etiam tempor orci
+              eu. Duis ultricies lacus sed turpis tincidunt. Ligula ullamcorper
+              malesuada proin libero nunc consequat interdum varius. Praesent
+              semper feugiat nibh sed pulvinar proin gravida. Posuere lorem
+              ipsum dolor sit. Nunc consequat interdum varius sit.</span
+            >
+          </div>
+        </div>
+        <img
+          src="./public/entrepreneur-top.svg"
+          alt=""
+          class="absolute top-0"
+          width="250"
+        />
+        <img
+          src="./public/entrepreneur-bottom-md.svg"
+          alt=""
+          class="absolute bottom-0 right-0"
+          width="280"
+        />
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.7.0/flowbite.min.js"></script>
+    <script>
+      const burger = document.getElementById("burger");
+      const navlist = document.getElementById("navlist");
+      const closeburger = document.getElementById("closeburger");
+      burger.addEventListener("click", () => {
+        navlist.style.display = "flex";
+        burger.style.display = "none";
+        closeburger.style.display = "block";
+      });
+      closeburger.addEventListener("click", () => {
+        navlist.style.display = "none";
+        closeburger.style.display = "none";
+        burger.style.display = "block";
+      });
+    </script>
+  </body>
+</html>
